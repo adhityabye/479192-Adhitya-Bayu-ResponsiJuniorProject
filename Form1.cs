@@ -28,10 +28,10 @@ namespace Responsi2
             try
             {
                 conn.Open();
-                sql = @"select * from st_insert(:_name, :_nama_dep)";
+                sql = @"select * from st_insert(:_nama, :_nama_dep)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_name", txtName.Text);
-                cmd.Parameters.AddWithValue("_departemen", txtDepartemen.Text);
+                cmd.Parameters.AddWithValue("_nama", txtName.Text);
+                cmd.Parameters.AddWithValue("_nama_dep", txtDepartemen.Text);
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
@@ -58,14 +58,15 @@ namespace Responsi2
             try
             {
                 conn.Open();
-                sql = @"select * from st_updatet(:_name, :_departemen)";
+                sql = @"select * from st_updatet(:_nama, :_nama_dep)";
                 cmd = new NpgsqlCommand(sql, conn);
+
 
             }
 
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show("Error:" + ex.Message, "Delete FAIL!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -82,7 +83,7 @@ namespace Responsi2
                     try
                     {
                         conn.Open();
-                        sql = @"select * from st_delete(:_id)";
+                        sql = @"select * from st_delete(:id_karyawan)";
                         cmd = new NpgsqlCommand(sql, conn);
                         cmd.Parameters.AddWithValue("_id", r.Cells["_id"].Value.ToString());
                         if ((int)cmd.ExecuteScalar() == 1)
@@ -106,7 +107,7 @@ namespace Responsi2
             if(e.RowIndex >= 0)
             {
                 r = dgvData.Rows[e.RowIndex];
-                txtName.Text = r.Cells["name"].Value.ToString();
+                txtName.Text = r.Cells["nama"].Value.ToString();
                 txtDepartemen.Text = r.Cells["departemen"].Value.ToString();
             }
         }
