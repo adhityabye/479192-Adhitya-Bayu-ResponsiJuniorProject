@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "CmztRydUWBFkQTu7gxBe1hQE9nIfTCpWrI+PjeunRxS0higY9W3cvi2in3WWOL17YH5oAEAy6PKXXYqEAx1HvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Adhitya Bayu\\Junior Project\\Responsi\\Responsi2\\Responsi2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\npgsql\\8.0.1\\npgsql.8.0.1.nupkg.sha512",
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Adhitya Bayu\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
